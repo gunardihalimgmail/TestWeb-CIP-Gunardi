@@ -19,7 +19,7 @@
 }
 
 .row:nth-of-type(odd) td {
-    cursor:pointer;
-    background-color: rgb(151, 179, 216);
-    color: white;
+  cursor:pointer;
+  background-color: rgb(153, 182, 190);
+  color: white;
 }
