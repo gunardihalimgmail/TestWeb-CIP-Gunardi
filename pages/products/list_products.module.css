@@ -1,0 +1,25 @@
+.table {
+  border-top:1px solid lightgrey;
+  border-bottom:1px solid lightgrey;
+}
+
+.container {
+  padding:30px;
+}
+
+.h3 {
+  color: chocolate;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom:20px;
+}
+
+.h3 .tespan {
+  color:red;
+}
+
+.row:nth-of-type(odd) td {
+    cursor:pointer;
+    background-color: rgb(151, 179, 216);
+    color: white;
+}
