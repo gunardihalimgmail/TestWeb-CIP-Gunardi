@@ -1,6 +1,19 @@
+.containerBodyTable::-webkit-scrollbar {
+  width:9px;
+}
+.containerBodyTable::-webkit-scrollbar-track {
+  background-color: #333f97;
+}
+.containerBodyTable::-webkit-scrollbar-thumb {
+  background-color:#818ef0;
+  border-radius: 30px;
+}
+
 .table {
   border-top:1px solid lightgrey;
   border-bottom:1px solid lightgrey;
+  /* max-height: 10px !important; */
+  /* overflow: hidden; */
 }
 
 .container {
@@ -18,8 +31,103 @@
   color:red;
 }
 
-.row:nth-of-type(odd) td {
+.containerTable {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 40px 0 rgba(0,0,0,.3);
+}
+
+.containerBodyTable {
+    position: relative;
+    top:-17px;
+    max-height: 485px;
+    overflow: auto;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,.9);
+    border-radius: 0 0 10px 10px;
+}
+
+
+.table thead tr th {
+  background-color: #6c7ae0;
+  color: #fff;
+  font-size: 18px;
+  line-height: 2;
+}
+
+
+.table tr:nth-of-type(even) td {
   cursor:pointer;
-  background-color: rgb(153, 182, 190);
-  color: white;
+  background-color: #f8f6ff;
+}
+.table tr:nth-of-type(odd) td {
+  background-color: #fff;
+}
+
+.table tr td {
+  color: gray;
+  line-height: 2;
+}
+
+.table tr th.column2,
+.table tr th.column3,
+.table tr th.column4, 
+.table tr th.column5, 
+.table tr th.column6 
+{
+  padding-left:0px !important;
+  position: sticky;
+  /* border:1px solid red; */
+}
+
+.table tr th.column1 {
+  /* border:1px solid red; */
+  position: sticky;
+}
+
+.table tr td.column1,
+.table tr th.column1 
+{
+  padding-left:40px;
+  /* width:30%; */
+  width: 100px;
+}
+.table tr td.column2,
+.table tr th.column2 
+{
+  /* width:16.6%; */
+  width: 100px;
+}
+
+.table tr td.column3,
+.table tr th.column3 {
+  /* width:16%; */
+  width: 100px;
+}
+.table tr td.column4,
+.table tr th.column4 {
+  /* width:16.6%; */
+  width: 40px;
+}
+.table tr td.column5,
+.table tr th.column5 {
+    /* width:16.6%; */
+    width: 60px;
+}
+.table tr td.column6,
+.table tr th.column6 
+{
+  /* width:16.6%; */
+  width: 100px;
+}
+
+.table tr td.column1,
+.table tr td.column2,
+.table tr td.column3,
+.table tr td.column4,
+.table tr td.column5,
+.table tr td.column6
+{
+  vertical-align: middle;
 }
