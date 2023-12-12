@@ -12,7 +12,7 @@ export async function openDatabase(): Promise<Database> {
     
     if (!db) {
         db = await open({
-          filename: 'test.db',
+          filename: './test.db',
           driver: sqlite3.Database,
         });
     }

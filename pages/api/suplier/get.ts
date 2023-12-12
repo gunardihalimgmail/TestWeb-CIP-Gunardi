@@ -7,7 +7,7 @@ export default async function handler(
         , res: NextApiResponse) {
   try {
     const dbs = await openDatabase();
-    const data = await dbs.all('SELECT a.*, b.nama_suplier FROM produk a left join suplier b on a.suplier_id = b.id_suplier');
+    const data = await dbs.all('SELECT * FROM suplier');
     res.status(200).json(data);
 
   } catch (error) {
